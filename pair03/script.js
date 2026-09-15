@@ -70,7 +70,6 @@ let productPrice = +prompt("Enter product price");
 let productCount = +prompt("Enter product count");
 let discountCard = confirm("Do you have a discount card?");
 let deliveryType = prompt("Enter product delivery type (courier/mail/pickup)");
-
 let totalPrice = productPrice * productCount;
 let totalDiscount = 0;
 if(totalPrice >= 10000)
@@ -97,12 +96,24 @@ if(discountCard)
     }
     else if(totalPrice >= 2000)
     {
-        totalDiscount = 0.1;
+        totalDiscount += 0.1;
     }
     else
     {
         totalDiscount += 0.05;
     }
 }
+totalPrice = totalPrice - (totalDiscount * totalPrice);
+switch(deliveryType)
+{
+    case "courier":
+        totalPrice += 200;
+        break;
+    case "mail":
+        totalPrice += 100;
+        break;
+}
+
+alert(`Your total is ${totalPrice}!`);
 
 
