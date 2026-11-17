@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background: #eef2fa;
+    color: #1f2a44;
+    font-family: Arial, sans-serif;
+}
+
+.app{
+    max-width: 880px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.subtitle{
+    color: #6b7280;
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+.layout{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.panel{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 22px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #dbe3f3;
+    border-radius: 8px;
+}
+
+button{
+    padding: 7px 11px;
+    border: 0;
+    border-radius: 8px;
+    background: #e3eafc;
+    color: #3b5bdb;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #3b5bdb;
+    color: #fff;
+}
+
+#add-button{
+    padding: 12px;
+    background: #3b5bdb;
+    color: #fff;
+}
+
+#add-button:hover{
+    background: #2b44b0;
+}
+
+.delete-btn{
+    background: #fde8e8;
+    color: #e74c3c;
+}
+
+.delete-btn:hover{
+    background: #e74c3c;
+    color: #fff;
+}
+
+#clear-button{
+    padding-left: 0;
+    background: none;
+    color: #6b7280;
+    text-align: left;
+}
+
+#clear-button:hover{
+    color: #e74c3c;
+}
+
+.stats{
+    display: flex;
+    gap: 12px;
+}
+
+.stats p{
+    flex: 1;
+    padding: 8px 12px;
+    background: #edf2fd;
+    border-radius: 10px;
+}
+
+#empty-message{
+    color: #6b7280;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+li{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #dbe3f3;
+    border-radius: 10px;
+}
+
+.info{
+    flex: 1;
+}
+
+li p{
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.status{
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: #fff1d6;
+    color: #a86b00;
+}
+
+.confirmed .status{
+    background: #d6f5df;
+    color: #1e8a43;
+}

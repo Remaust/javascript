@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Клуб подій</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <h1>Клуб подій</h1>
+        <p class="subtitle">Керуйте заявками на участь у шкільних активностях</p>
+
+        <div class="layout">
+            <section class="panel">
+                <h2>Нова заявка</h2>
+
+                <label>Ім'я учасника</label>
+                <input id="name-input" type="text" placeholder="Марія Коваль">
+
+                <label>Назва події</label>
+                <input id="event-input" type="text" placeholder="Хакатон ліцею">
+
+                <button id="add-button">+ Додати заявку</button>
+            </section>
+
+            <section class="panel">
+                <h2>Учасники</h2>
+
+                <div class="stats">
+                    <p>Усього заявок: <strong id="total-counter">0</strong></p>
+                    <p>Підтверджено: <strong id="confirmed-counter">0</strong></p>
+                </div>
+
+                <p id="empty-message">Заявок поки немає</p>
+                <ul id="request-list"></ul>
+
+                <button id="clear-button">Очистити всі заявки</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
